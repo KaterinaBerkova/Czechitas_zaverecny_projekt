@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+
+	<!-- Google Fonts: Cinzel, Montserrat -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+	<!-- Naše vlastní CSS -->
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__image">
+				<p class="header__logo">Kate's little wonders</p>
+			</div>
+
+			<div>
+				<p class="header__motto">“Ne všichni, kteří se toulají, jsou ztraceni.” - J. R. R. Tolkien</p>
+			</div>
+
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="/index/" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="/omne/" class="menu__link">O mně</a></li>
+					<li class="menu__item"><a href="/objevuj/" class="menu__link">Objevuj</a></li>
+					<li class="menu__item"><a href="/galerie/" class="menu__link">Galerie</a></li>
+				</ul>
+
+			</nav>
+		</header>
+
+		<main class="main">
+
+<!-- ↑↑↑ odtud nahoru je vrchní část společná pro všechny stránky na webu -->
+
+
+
+
+                {{ content | safe }}
+
+
+
+
+
+			
+<!-- ↓↓↓ odtud dolů je spodní část společná pro všechny stránky na webu -->
+		</main>
+
+
+		<footer class="footer">
+			<div class="footer__contact">
+				<a class="btn btn__contact" href="/kontakt/">Kontaktuj mě</a>
+			</div>
+			
+			<div class="footer__icons">
+				<a href="https://www.facebook.com/"><img class="footer__icons--facebook" src="/images/icon_facebook.png" alt="Logo Facebook" width="30" height="30"></a>
+				<a href="https://www.instagram.com/"><img class="footer__icons--instagram" src="/images/icon_instagram.png" alt="Logo Instagram" width="30" height="30"></a>
+				<a href="https://www.pinterest.com/"><img class="footer__icons--pinterest" src="/images/icon_pinterest.png" alt="Logo Pinterest" width="30" height="30"></a>
+			</div>
+
+			<div class="footer__copyright">
+				&copy;2024, Kateřina Berková pro kurz Staň se kóderkou, Czechitas
+			</div>
+		</footer>
+
+
+	</div><!-- .wrapper -->
+</body>
+</html>

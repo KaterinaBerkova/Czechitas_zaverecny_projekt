@@ -1,0 +1,435 @@
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+body {
+	margin: 0;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	background-color: #232323;
+	color: #E3E3E3;
+}
+
+.wrapper {
+	max-width: 66rem;
+	margin: 0 auto;
+	background-color: #232323;
+	box-shadow: 0 1px 10px rgba(63, 63, 63, 0.7);
+}
+
+h1, h2, h3 {
+	font-family: 'Cinzel';
+	font-weight: 500;
+	color: #AB8C44;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+h3 { font-size: 22px; }
+
+section {
+	padding: 60px 24px;
+}
+
+p {
+	margin: 0;
+}
+
+
+
+/*
+ **************************************
+	HEADER
+ **************************************
+*/
+
+.header__logo {
+	font-family: 'Cinzel';
+	font-size: 62px;
+	font-weight: 500;
+	color: #232323;
+	text-align: center;
+	margin: 0;
+	padding-top: 50px;
+}
+
+.header__image {
+	margin: 0;
+	height: 300px;
+	max-width: 100%;
+	background: url(./../images/PANO_cape_reigna.jpg) no-repeat center/cover;
+}
+
+.header__motto {
+	font-family: 'Cinzel';
+	font-size: 10px;
+	font-weight: 500;
+	text-align: left;
+	margin: 10px 0px;
+	margin-left: 10px;
+}
+
+
+/*
+ **************************************
+	MENU
+ **************************************
+*/
+
+.menu {
+	border-top: 1px solid #AB8C44;
+	border-bottom: 1px solid #AB8C44;
+}
+
+.menu__list {
+	font-family: 'Cinzel';
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.menu__item {
+	margin: 0;
+	padding: 0;
+}
+
+.menu__link {
+	display: block;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #AB8C44;
+}
+
+.menu__link:hover {
+	color: #E3E3E3;
+}
+
+
+
+/*
+ **************************************
+	Vítejte
+ **************************************
+*/
+
+.welcome {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 30px;
+}
+
+
+
+
+/*
+ **************************************
+	Panorama
+ **************************************
+*/
+
+.panorama {
+		margin: 0;
+		height: 300px;
+		max-width: 100%;
+		background: url(./../images/slideshow_02_mensi.jpg) no-repeat top/cover;
+	}
+
+
+
+/*
+ **************************************
+	OOBJEVUJ - články
+ **************************************
+*/
+
+.articles_main {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+}
+
+.articles {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+.articles__photo {
+	width: 100%;
+	height: 240px;
+	border: 1.5px solid #E3E3E3;
+	border-radius: 7.5%;
+}
+
+.h2_homepage {
+	text-align: center;
+	font-size: 32px;
+	margin: 26px 0;
+	font-family: 'Cinzel';
+	font-weight: 500;
+	color: #AB8C44;
+
+}
+
+h3,
+.articles__text {
+	text-align: center;
+}
+
+.btn {
+	background: transparent;
+	border: 1px solid #E3E3E3;
+	border-radius: 25px;
+	width: 100px;
+    color: #E3E3E3;
+    text-align: center;
+    text-decoration: none;
+	padding: 6px 12px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn__articles {
+	grid-column: 3;
+}
+
+.btn__location {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: right;
+	margin-top: 30px;
+}
+
+
+
+/*
+ **************************************
+	FOOTER
+ **************************************
+*/
+
+.footer {
+	margin-top: 60px;
+}
+
+.footer__copyright {
+	padding: 16px 24px;
+	font-size: 14px;
+	text-align: center;
+	color: #E3E3E3;
+}
+
+.footer__contact {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 1fr;
+	justify-items: center;
+	margin-bottom: 15px;
+}
+
+.btn__contact {
+	grid-column: 9 / -1;
+	width: 170px;
+}
+
+.footer__icons {
+	display: flex;
+	justify-content: flex-end;
+	border-top: 1px solid #E3E3E3;
+}
+
+.footer__icons--facebook,
+.footer__icons--instagram,
+.footer__icons--pinterest {
+	margin: 15px 20px 0 20px;
+}
+
+
+
+
+
+
+
+/*
+ **************************************
+	CSS PRO JEDNOTLIVÉ STRÁNKY
+ **************************************
+*/
+
+
+/*
+ **************************************
+	KONTAKT
+ **************************************
+*/
+
+.contact__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+}
+
+
+/*
+ **************************************
+	FORMULAR
+ **************************************
+*/
+
+.form-field {
+	margin-bottom: 10px;
+}
+
+.form-field label {
+	display: block;
+	font-size: 15px;
+	margin-bottom: 3px;
+}
+
+.form-field :is(input, textarea, select) {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #E3E3E3;
+	border-radius: 4px;
+}
+
+.required:after {
+	content: "*";
+	color: red;
+	margin-left: 4px;
+}
+
+
+
+
+/*
+ **************************************
+	O MNĚ
+ **************************************
+*/
+
+.about {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.about__photo {
+	width: 420px;
+	height: 526px;
+	border: 1.5px solid #E3E3E3;
+	border-radius: 7.5%;
+}
+
+.about_me--01 {
+	margin-bottom: 30px;
+}
+
+
+
+
+/*
+ **************************************
+	OBJEVUJ - SAMOSTATNÁ STRÁNKA
+ **************************************
+*/
+
+
+
+
+
+
+
+
+/*
+ **************************************
+	ČLÁNEK
+ **************************************
+*/
+
+.paper {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.paper__photo {
+	width: 420px;
+	height: 526px;
+	border: 1.5px solid #E3E3E3;
+	border-radius: 7.5%;
+}
+
+.btn__paper {
+	text-align: right;
+}
+
+
+
+/*
+ **************************************
+	MAPA
+ **************************************
+*/
+.map {
+	padding: 0;
+	margin-top: 60px;
+	text-align: center;
+
+}
+
+
+
+
+/*
+ **************************************
+	ČLÁNEK - prázdná stránka
+ **************************************
+*/
+
+.paper {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.h3_modify {
+	text-align: left;
+}
+
+
+
+
+
+
+/*
+ **************************************
+	GALLERY
+ **************************************
+*/
+
+.gallery__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+	gap: 1px;
+	margin-bottom: 100px;
+}
+
+.gallery__item {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gallery__item:nth-child(5n+2) {
+	grid-column: span 2;
+	grid-row: span 2;
+}
