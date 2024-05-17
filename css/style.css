@@ -433,3 +433,111 @@ h3,
 	grid-column: span 2;
 	grid-row: span 2;
 }
+
+
+
+
+/*
+ **************************************
+	pokus s nastavením článku
+ **************************************
+*/
+
+@media screen and (min-width: 550px) {
+    .recipe {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 60px 100px 20px auto auto;
+        gap: 20px;
+        max-width: 900px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+	}
+
+	div {
+		display: block;
+		unicode-bidi: isolate;
+		}
+
+	@media screen and (min-width: 550px) {
+		.recipe__preparation-overview {
+			font-size: 18px;
+			grid-row: 2;
+		}
+	}
+
+	.recipe__preparation-overview {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	@media screen and (min-width: 550px) {
+		.recipe__photo {
+			max-width: 400px;
+			width: 100%;
+			grid-column: 2 / span 1;
+			grid-row: 2 / span 3;
+			margin: 0;
+			justify-self: center;
+		}
+	}
+
+	.recipe__photo {
+		max-width: 350px;
+		width: 100%;
+		border-radius: 10px;
+		margin: 15px auto;
+	}
+
+	img {
+		overflow-clip-margin: content-box;
+		overflow: clip;
+	}
+
+	@media screen and (min-width: 500px) {
+		.recipe__portions {
+			font-size: 18px;
+			grid-row: 3;
+		}
+	}
+
+	.recipe__portions {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	@media screen and (min-width: 500px) {
+		.recipe__ingredients {
+			font-size: 18px;
+			grid-row: 4;
+		}
+	}
+
+	.recipe__ingredients {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: 500px) {
+		.recipe__ingredients {
+			font-size: 18px;
+			grid-row: 4;
+		}
+	}
+
+	@media screen and (min-width: 500px) {
+		.recipe__howto {
+			font-size: 18px;
+			grid-row: 5;
+			grid-column: span 2;
+		}
+	}
+
+	.recipe__howto {
+		font-size: 16px;
+	}
+
+	
