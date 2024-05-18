@@ -60,6 +60,15 @@ img {
 	padding-top: 50px;
 }
 
+@media screen and (max-width: 550px) {
+    .header__logo {
+		font-size: 50px;
+    }
+	}
+
+
+
+
 .header__image {
 	margin: 0;
 	height: 300px;
@@ -162,8 +171,16 @@ img {
 .articles {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
 }
+
+@media screen and (max-width: 550px) {
+    .articles {
+		padding-bottom: 50px;
+		border-bottom: 1px solid #AB8C44;
+    }
+	}
+
+
 
 .articles__photo {
 	width: 100%;
@@ -220,6 +237,7 @@ h3,
 
 
 
+
 /*
  **************************************
 	FOOTER
@@ -249,6 +267,19 @@ h3,
 	grid-column: 9 / -1;
 	width: 170px;
 }
+
+@media screen and (max-width: 550px) {
+    .btn__contact {
+		margin-right: 20px;
+    }
+	}
+
+@media (min-width: 480px) {
+	.btn__contact {
+		margin-right: 20px;
+	}
+}
+
 
 .footer__icons {
 	display: flex;
@@ -315,23 +346,62 @@ h3,
  **************************************
 */
 
-.about {
-	display: flex;
-	gap: 30px;
-	align-items: center;
+@media screen and (min-width: 550px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        max-width: 900px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+	}
+
+
+@media screen and (min-width: 550px) {
+	.about__photo {
+		width: 100%;
+		grid-column: 2 / span 1;
+		grid-row: 1 / span 3;
+		margin: 0;
+		justify-self: center;
+	}
 }
 
 .about__photo {
-	width: 420px;
-	height: 526px;
+	max-width: 300px;
+	width: 100%;
+	border-radius: 15px;
+	margin: 15px auto;
 	border: 1.5px solid #E3E3E3;
-	border-radius: 7.5%;
 }
 
-.about_me--01,
-.text_01 {
-	margin-bottom: 30px;
+
+@media screen and (min-width: 550px) {
+	.about__part01 {
+		grid-row: 1;
+	}
+
+	.about__part02 {
+		grid-row: 2;
+	}
+
+	.about__part03 {
+		grid-row: 3;
+	}
 }
+		
+.about__part01,
+.about__part02,
+.about__part03 {
+	margin-bottom: 10px;
+}
+
+
+
 
 
 
@@ -364,56 +434,15 @@ h3,
 
 
 
+
+
 /*
  **************************************
-	OBJEVUJ - samostatná stránka
+	OBJEVUJ - samostatná stránka, 
+	zobrazení všech článků, výběr,
 	zatím stejné jako na homepage
  **************************************
 */
-
-
-
-
-/*
- **************************************
-	ČLÁNEK - když je prázdný
- **************************************
-*/
-
-.paper {
-	display: flex;
-	gap: 30px;
-	align-items: center;
-}
-
-.paper__photo {
-	width: 420px;
-	height: 526px;
-	border: 1.5px solid #E3E3E3;
-	border-radius: 7.5%;
-}
-
-.btn__paper {
-	text-align: right;
-}
-
-.h3_paper {
-	text-align: left;
-	margin-top: 0;
-	margin-bottom: 22px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -429,37 +458,9 @@ h3,
 
 
 
-
-
 /*
  **************************************
-	ČLÁNEK - prázdná stránka
- **************************************
-*/
-
-.paper {
-	display: flex;
-	gap: 30px;
-	align-items: center;
-}
-
-.h3_modify {
-	text-align: left;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*
- **************************************
-	pokus s nastavením článku
+	ČLÁNEK - post, nastavení stránky
  **************************************
 */
 
@@ -489,6 +490,12 @@ h3,
     }
 	}
 
+.post {
+	padding-bottom: 50px;
+	border-bottom: 1px solid #AB8C44;
+}
+
+
 div {
 	display: block;
 	unicode-bidi: isolate;
@@ -497,7 +504,6 @@ div {
 
 @media screen and (min-width: 550px) {
 	.post__photo {
-
 		width: 100%;
 		grid-column: 2 / span 1;
 		grid-row: 2 / span 3;
@@ -513,10 +519,6 @@ div {
 	margin: 15px auto;
 	border: 1.5px solid #E3E3E3;
 }
-
-
-
-
 
 
 @media screen and (min-width: 550px) {
@@ -538,11 +540,22 @@ div {
 	}
 }
 		
-
-.post {
-	padding-bottom: 50px;
-	border-bottom: 1px solid #AB8C44;
+.post_introduction,
+.part01,
+.part02 {
+	margin-bottom: 10px;
 }
 
 
+/*
+ **************************************
+	ČLÁNEK - post, nastavení stránky
+	button pro prázdnou stránku
+ **************************************
+*/
+
+.btn__paper {
+	text-align: right;
+	margin-top: 50px;
+}
 
